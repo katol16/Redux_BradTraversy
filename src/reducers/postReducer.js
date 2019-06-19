@@ -16,7 +16,14 @@ export default function(state = initialState, action) {
                 // teraz chcemy też dodać to co przyjdzię w payload
                 items: action.payload
             };
+        case NEW_POST:
+            return {
+                // Ponieważ używamy jsonplaceholder bedzei to troszke ianczej zrobione, bo ten jsonplacehodler API, ma swoje ograniczenia
+                ...state,
+                item: action.payload
+            };
         default:
             return state;
     }
 };
+
