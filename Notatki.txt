@@ -1,1 +1,17 @@
-State is immutible
+State is immutible -> to także w React
+
+W naszym przykłądzie użyjemy Reduxa do tego, żeby dodać nasz PostItem do koponentu Post, za pomocą Reduxa, również wczytamy te posty
+
+	redux0thunk - middleware - pozwala wywoływać dispatch dzięki czemu mamy  asynchroniczne wywołąnie naszych akcji (raczej)
+
+Provider - skleja nam reacta z reduxem -> naszego głównego diva "App" wsadzamy w <Provder>
+Provider przyjmuje jako propsa store, który ejst naszym store'em
+
+Store -  holds the whole state tree of your application. The only way to change the state inside it it to dispatch action on it. A store is not a class. It's just an object with a few methods on it. To ceate it, pass your root reducing function to createStore
+
+createStroe, przyjmuje  parametry
+	createStore(reducer, [preloadedState], [enhancer])
+
+	reducer - root reducer -> główny reducer, może być kombinacją wielu reducerów
+	preloadedState - inital state
+	enhancer - thirdparty compabilities, np. reduxDevTools
