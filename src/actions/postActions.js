@@ -43,4 +43,4 @@ export const fetchPosts = () => dispatch => {
 //     }
 // }
 
-// dispatch -  mozesz to troche traktować jako promise -> reques, resolve
+// dispatch -  mozesz to troche traktować jako promise -> (resolve, reject)
